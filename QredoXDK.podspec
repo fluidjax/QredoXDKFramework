@@ -36,6 +36,7 @@ TODO: Add long description of the pod here.
   #   'QredoXDK' => ['QredoXDK/Assets/*.png']
   # }
 
+  s.vendored_frameworks = 'Example/QredoXDK.framework'
   
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
