@@ -1,0 +1,6 @@
+framework module QredoXDK {
+  umbrella header "QredoXDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

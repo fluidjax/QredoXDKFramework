@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		83C5C2371D09B9A80054CC97 /* QredoXDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C5C2361D09B9A80054CC97 /* QredoXDK.framework */; };
+		83C5C2381D09B9A80054CC97 /* QredoXDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83C5C2361D09B9A80054CC97 /* QredoXDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9804AFC3A57D5EC01BECEFCA /* Pods_QredoXDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE40B1A924BC7033B287C71D /* Pods_QredoXDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,20 @@
 			remoteInfo = QredoXDK;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83C5C2391D09B9A80054CC97 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83C5C2381D09B9A80054CC97 /* QredoXDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A814DC84ADA7872BC900187 /* Pods-QredoXDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QredoXDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-QredoXDK_Example/Pods-QredoXDK_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +60,7 @@
 		607FACE51AFB9204008FA782 /* QredoXDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QredoXDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		83C5C2361D09B9A80054CC97 /* QredoXDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QredoXDK.framework; sourceTree = "<group>"; };
 		B2FA300612B404B62F7A6C10 /* Pods-QredoXDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QredoXDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QredoXDK_Tests/Pods-QredoXDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BA6684A9E220ADECBE6977B8 /* Pods-QredoXDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QredoXDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QredoXDK_Tests/Pods-QredoXDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE40B1A924BC7033B287C71D /* Pods_QredoXDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QredoXDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C5C2371D09B9A80054CC97 /* QredoXDK.framework in Frameworks */,
 				9804AFC3A57D5EC01BECEFCA /* Pods_QredoXDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +110,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				83C5C2361D09B9A80054CC97 /* QredoXDK.framework */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for QredoXDK */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -172,6 +191,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				89AA2B6F7D2DECBBA4A5490B /* 📦 Embed Pods Frameworks */,
 				1FBC3F59046BCDF549856E92 /* 📦 Copy Pods Resources */,
+				83C5C2391D09B9A80054CC97 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -489,11 +509,16 @@
 			baseConfigurationReference = 3F71B04EE4C468E931444571 /* Pods-QredoXDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QredoXDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -502,11 +527,16 @@
 			baseConfigurationReference = 1A814DC84ADA7872BC900187 /* Pods-QredoXDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QredoXDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

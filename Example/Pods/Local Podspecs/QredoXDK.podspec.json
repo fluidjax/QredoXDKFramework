@@ -1,0 +1,22 @@
+{
+  "name": "QredoXDK",
+  "version": "0.1.0",
+  "summary": "A short description of QredoXDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/QredoXDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Chris Morris": "chris@morris.net"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/QredoXDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QredoXDK/Classes/**/*"
+}

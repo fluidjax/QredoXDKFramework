@@ -1,0 +1,16 @@
+PODS:
+  - QredoXDK (0.1.0)
+
+DEPENDENCIES:
+  - QredoXDK (from `../`)
+
+EXTERNAL SOURCES:
+  QredoXDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QredoXDK: 919ebd9790f2fc5a95faf4c0a0d8083a30a068eb
+
+PODFILE CHECKSUM: a77d304d73026f5840e68a9acb5570ab72bd7964
+
+COCOAPODS: 1.0.0
